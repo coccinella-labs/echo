@@ -4,7 +4,7 @@
 
 # echo
 
-[![Release](https://img.shields.io/github/v/release/libnudget/echo?logo=github&label=latest)](https://github.com/libnudget/echo/releases)
+[![Release](https://img.shields.io/github/v/release/coccinella-labs/echo?logo=github&label=latest)](https://github.com/coccinella-labs/echo/releases)
 
 Reusable GitHub Action for suggesting potentially similar issues and upserting a triage comment.
 
@@ -38,7 +38,7 @@ jobs:
       issues: write
     steps:
       - uses: actions/checkout@v4
-      - uses: libnudget/echo@main
+      - uses: coccinella-labs/echo@main
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           repository: ${{ github.repository }}
@@ -62,7 +62,7 @@ jobs:
 | `marker` | no | `<!-- issue-similarity-check -->` | Hidden marker for comment updates |
 | `intro_text` | no | standard text | Comment intro |
 | `outro_text` | no | standard text | Comment outro |
-| `footer_text` | no | `@libnudget` | Footer mention or link |
+| `footer_text` | no | `@coccinella-labs` | Footer mention or link |
 | `stopwords_regex` | no | built-in regex | Words ignored during scoring |
 
 ## Notes
