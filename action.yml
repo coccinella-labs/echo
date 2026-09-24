@@ -46,7 +46,7 @@ inputs:
   footer_text:
     description: Footer text with mention or link.
     required: false
-    default: "@libnudget"
+    default: "@coccinella-labs"
   stopwords_regex:
     description: Case-insensitive regex for terms that should be ignored during scoring.
     required: false
